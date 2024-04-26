@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Up Beauty</title>
+    <style>
+      /* style.css */
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: linear-gradient(to right, #ffc1cc, #ffebf0);
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo {
+        font-size: 2em;
+        font-weight: bold;
+        color: #f05e73;
+    }
+    
+    nav a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav a:hover {
+        color: #f05e73;
+    }
+    
+    #signup {
+        background-color: #f05e73;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    main {
+        padding: 50px;
+    }
+    
+    #home {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Glow Up Beauty</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+        </nav>
+        <button id="signup">Sign Up</button>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 class="banner-text">Unlock Your Inner Radiance</h2>
+            <p class="banner-text">Discover high-quality, cruelty-free beauty products that enhance your natural glow.</p>
+            <img src="images/banner.jpg" alt="Beautiful woman with glowing skin">
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-container">
+                <article class="product">
+                    <img src="images/product1.jpg" alt="Moisturizer">
+                    <h3>Hydrating Daily Moisturizer</h3>
+                    <p>This lightweight formula delivers deep hydration without clogging pores. Perfect for all skin types.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+                <article class="product">
+                    <img src="images/product2.jpg" alt="Serum">
+                    <h3>Nourishing Vitamin C Serum</h3>
+                    <p>Brighten and even your skin tone with this potent serum packed with Vitamin C and antioxidants.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+                <article class="product">
+                    <img src="images/product3.jpg" alt="Mascara">
+                    <h3>Volumizing Mascara</h3>
+                    <p>Achieve dramatic, clump-free lashes with this innovative mascara that lengthens and defines.</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+            </div>
+            <a href="#" class="view-more">View More Products</a>
+        </section>
+
+        <section id="signup-form" style="display: none;">
+            <h2>Sign Up for Exclusive Offers</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Glow Up Beauty 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
